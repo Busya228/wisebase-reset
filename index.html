@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src https://umgvbcmxbevbmyzhdsmr.supabase.co; form-action 'none'; base-uri 'none'; object-src 'none'; require-trusted-types-for 'script'; trusted-types 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WiseBase — смена пароля</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="app" hidden>
+  <h1>Смена пароля WiseBase</h1>
+  <p id="msg" role="status" aria-live="polite"></p>
+  <form id="form" novalidate hidden>
+    <label for="pw1">Новый пароль</label>
+    <input id="pw1" type="password" autocomplete="new-password" minlength="10" maxlength="72" required>
+    <label for="pw2">Повторите пароль</label>
+    <input id="pw2" type="password" autocomplete="new-password" minlength="10" maxlength="72" required>
+    <p class="hint">Не менее 10 символов. После смены вы выйдете из WiseBase на всех устройствах — войдите заново с новым паролем.</p>
+    <button id="btn" type="submit">Сменить пароль</button>
+  </form>
+</main>
+<noscript>Для смены пароля включите JavaScript.</noscript>
+<script src="reset.js"></script>
+</body>
+</html>
